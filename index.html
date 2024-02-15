@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="./app.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js"
+      integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="./app.js"
+      type="module"></script>
+    <title>WEB3_test_wallet</title>
+</head>
+<body>
+   
+    <div class="wallet">
+        <h1>WEB3 Test Wallet <br> 
+            *Ganache*</h1>
+        
+        <div class="input-group" id="fromGroup">
+            <label for="fromAccount" class="label">Account From:</label>
+            <input type="text" id="fromAccount">
+
+            <button class="btn-check" id="btnCheck">Check Balance</button>
+            <div><span id="balanceFrom" class="balance"></span> ETH</div>
+        </div>
+
+        <div class="input-group" id="toGroup">
+            <label for="toAccount" class="label">Account To:</label>
+            <input type="text" id="toAccount">
+
+        <!-- <button class="btn-check" id="btnCheckTo">Check Balance</button> -->
+        <!-- <div><span id="balanceTo" class="balance"></span> ETH </div> -->
+        </div>
+
+        <div class="input-group" id="amountGroup">
+            <label for="amount" class="label">Amount to Transfer:</label>
+            <input type="text" id="amount">
+        </div>
+
+        <button class="btn" id="btnTransfer">Transfer</button>
+
+        <h4>Transaction History</h4>
+        <div class="history" id="history">
+            <div class="transaction">
+                <span id="Hfrom">Transferred From:</span>
+                <span id="Hto">Transferred To:</span>
+                <span id="Hvalue">Value:</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
